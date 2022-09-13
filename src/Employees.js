@@ -92,10 +92,20 @@ const Employees = () => {
       }])
 
     return (
-        <div>
-            {employees.map(employee => (
-                <p>{employee.fullName}</p>
-            ))}
+        <div className='container'>
+            <div className='row'>
+                <div className='col-8'>
+                    {
+                        employees.map(employee => (
+                            <div id={employee.id} className="card">
+                                
+                            </div>
+                        ))
+                    }
+                </div>
+
+            </div>
+
         </div>
     )
     
