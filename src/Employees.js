@@ -98,6 +98,7 @@ const Employees = () => {
                     {
                         employees.map(employee => (
                             <div id={employee.id} className="card">
+                                <img src={femaleProfile} className="card-img-top" />
                                 
                             </div>
                         ))
