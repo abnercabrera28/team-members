@@ -1,5 +1,8 @@
 import React from 'react'
 import { useState } from 'react'
+import femaleProfile from "./images/femaleProfile.jpg"
+import maleProfile from "./images/maleProfile.jpg"
+
 
 const Employees = () => {
 
@@ -89,7 +92,11 @@ const Employees = () => {
       }])
 
     return (
-        <div>Employees</div>
+        <div>
+            {employees.map(employee => (
+                <p>{employee.fullName}</p>
+            ))}
+        </div>
     )
     
 }
