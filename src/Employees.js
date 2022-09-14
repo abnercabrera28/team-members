@@ -101,6 +101,7 @@ const Employees = () => {
                                 <img src={femaleProfile} className="card-img-top" />
                                 <div className='card-body'>
                                     <h5 className='card-title'>Full Name: {employee.fullName}</h5>
+                                    <p className='card-text'><b>Designation: {employee.designation}</b></p>
                                 </div>
                             </div>
                         ))
