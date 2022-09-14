@@ -1,6 +1,7 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import Employees from "./Employees";
+import "./index.css"
 
 function App() {
   return (
