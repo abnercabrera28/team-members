@@ -94,6 +94,14 @@ const Employees = () => {
     return (
         <div className='container'>
             <div className='row justify-content-center mt-3 mb-3'>
+                <div className='col-6'>
+                    <select>
+                        <option value="TeamA">TeamA</option>
+                        <option value="TeamB">TeamB</option>
+                        <option value="TeamC">TeamC</option>
+                        <option value="TeamD">TeamD</option>
+                    </select>
+                </div>
                 <div className='col-8'>
                     <div className='card-collection'>
                     {
