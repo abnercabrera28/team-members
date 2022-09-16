@@ -1,8 +1,11 @@
 import React from 'react'
 
-const Header = () => {
+const Header = ({selectedTeam, teamMemberCount}) => {
   return (
-    <div>Header</div>
+    <header>
+      <h1>Team Members</h1>
+      <h3>{selectedTeam} has {teamMemberCount} Members</h3>
+    </header>
   )
 }
 
