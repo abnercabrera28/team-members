@@ -108,7 +108,11 @@ function App() {
   return (
     <div>
       <Header />
-      <Employees />
+      <Employees employees={employees} 
+        selectedTeam={selectedTeam} 
+        handleSelectedTeam={handleSelectedTeam}
+        handleCardClick={handleCardClick} 
+      />
       <Footer />
     </div>
   );

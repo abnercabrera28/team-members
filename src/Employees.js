@@ -3,7 +3,7 @@ import femaleProfile from "./images/femaleProfile.jpg"
 import maleProfile from "./images/maleProfile.jpg"
 
 
-const Employees = () => {
+const Employees = ({ employees, selectedTeam, handleCardClick, handleSelectedTeam }) => {
 
     return (
         <div className='container'>
