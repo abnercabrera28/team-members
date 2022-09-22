@@ -1,7 +1,7 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import Employees from "./Employees";
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import "./index.css"
 
 function App() {
@@ -92,6 +92,14 @@ function App() {
       gender: "male",
       teamName: "TeamD"
     }])
+
+    useEffect(() => {
+      localStorage.setItem("employeeList", JSON.stringify(employees))
+    }, [employees])
+
+    useEffect(() => {
+      localStorage.setItem("selectedTeam", JSON.stringify(selectedTeam))
+    }, [selectedTeam])
 
     const handleSelectedTeam = (event) => {
       setTeam(event.target.value)
